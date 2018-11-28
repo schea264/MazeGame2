@@ -38,10 +38,8 @@ public class Wall : MonoBehaviour {
 					x == 15 && z == 15)
 					&& Random.value < 0.10f)
 				{	
-					Transform wall0 = Instantiate(wall.transform, new Vector3(x, 0.5f, 16), Quaternion.identity);	
-					Transform wall1 = Instantiate(wall.transform, new Vector3(x, 0.5f, -16), Quaternion.identity);  
+					Transform wall0 = Instantiate(wall.transform, new Vector3(x, 0.5f, z), Quaternion.identity);	
 					wall0.parent = level.transform;
-					wall1.parent = level.transform;
 				}
 			}
 		}
